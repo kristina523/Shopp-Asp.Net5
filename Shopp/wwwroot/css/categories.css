@@ -1,0 +1,45 @@
+﻿html, body {
+    height: 100%; /* Установить высоту для html и body */
+}
+
+body {
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: hotpink;
+    margin-bottom: 20px;
+}
+
+.categories-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .categories-table th,
+    .categories-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .categories-table th {
+        background-color: lightpink;
+        font-weight: bold;
+    }
+
+    .categories-table a {
+        text-decoration: none;
+        color: mediumpurple;
+    }
+
+        .categories-table a:hover {
+            text-decoration: underline;
+        }
+
+.btn-success {
+    margin-bottom: 10px;
+}

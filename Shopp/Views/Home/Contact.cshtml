@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Контакты";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Магазин Косметики</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: indianred;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: greenyellow;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        h2 {
+            color: #ff6f61;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about">О нас</a>
+            <a href="/products">Продукты</a>
+            <a href="/contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Свяжитесь с нами</h2>
+            <p>Email: <a href="mailto:contact@cosmeticsstore.ru">contact@cosmeticsstore.ru</a></p>
+            <p>Телефон: <a href="tel:+71234567890">+7 123 456 7890</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин Косметики</p>
+    </footer>
+</body>
+</html>

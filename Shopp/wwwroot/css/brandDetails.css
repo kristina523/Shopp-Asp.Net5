@@ -1,0 +1,104 @@
+﻿body {
+    background-color: deeppink;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: hotpink; /* Darker gray for better contrast */
+    margin-bottom: 20px;
+}
+
+.brand-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Subtle border */
+}
+
+    .brand-details dl {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee; /* Separator between entries */
+        padding-bottom: 10px;
+    }
+
+    .brand-details dt {
+        font-weight: bold;
+        color: cornflowerblue; /* Darker gray */
+    }
+
+    .brand-details dd {
+        margin-left: 10px;
+        color: #333; /* Darker gray */
+    }
+body {
+    background-color: mediumpurple; /* Lighter gray background */
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #343a40; /* Darker gray */
+    margin-bottom: 20px;
+}
+
+.brand-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: mediumspringgreen;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ced4da; /* Light gray border */
+}
+
+    .brand-details dl {
+        margin-bottom: 20px;
+    }
+
+    .brand-details dt {
+        font-weight: bold;
+        color: greenyellow; /* Darker gray */
+    }
+
+    .brand-details dd {
+        margin-left: 10px;
+        color: #495057; /* Slightly darker gray for better contrast */
+    }
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: lightpink;
+    margin-bottom: 20px;
+}
+
+.brand-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .brand-details dl {
+        margin-bottom: 20px;
+    }
+
+    .brand-details dt {
+        font-weight: 600; /* Slightly bolder */
+        color: #333;
+        background-color: #f0f0f0; /* Light gray background for labels */
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    .brand-details dd {
+        margin-left: 10px;
+        color: #333;
+    }

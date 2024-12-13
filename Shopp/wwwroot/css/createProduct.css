@@ -1,0 +1,48 @@
+﻿body {
+    background-color: pink; 
+    font-family: 'Arial', sans-serif; 
+}
+
+h1, h2 {
+    color: royalblue; 
+    margin-bottom: 20px;
+}
+
+.create-product-form {
+    width: 60%; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: hotpink; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+    .create-product-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: palevioletred;
+    }
+
+    .create-product-form input[type="text"],
+    .create-product-form textarea { 
+        width: calc(100% - 22px); 
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; 
+    }
+
+    .create-product-form input[type="submit"] {
+        background-color: deeppink; 
+        color: hotpink;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .create-product-form input[type="submit"]:hover {
+            background-color: ,deepskyblue; 
+        }

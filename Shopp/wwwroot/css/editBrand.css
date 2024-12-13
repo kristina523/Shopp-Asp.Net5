@@ -1,0 +1,81 @@
+﻿body {
+    background-color: #f8f9fa; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h4 {
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.edit-brand-form {
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .edit-brand-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555; 
+    }
+
+    .edit-brand-form input[type="text"],
+    .edit-brand-form textarea,
+    .edit-brand-form select { 
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .edit-brand-form input[type="submit"] {
+        background-color: #007bff; 
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+
+        .edit-brand-form input[type="submit"]:hover {
+            background-color: #0069d9; 
+        }
+
+    .edit-brand-form .text-danger {
+        color: #dc3545; 
+        margin-top: 5px;
+        font-size: 0.875em;
+    }
+
+.back-to-list {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    .back-to-list a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #6c757d; 
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-to-list a:hover {
+            background-color: #5a6268; 
+        }
+
+@media (max-width: 576px) {
+    .edit-brand-form {
+        width: 90%;
+    }
+}

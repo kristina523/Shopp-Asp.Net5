@@ -1,0 +1,62 @@
+﻿body {
+    background-color: pink; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h4 {
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.create-category-form {
+    max-width: 500px; 
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightpink;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .create-category-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: palevioletred; 
+    }
+
+    .create-category-form input[type="text"],
+    .create-category-form textarea,
+    .create-category-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .create-category-form input[type="submit"] {
+        background-color: bisque; 
+        color: blanchedalmond;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .create-category-form input[type="submit"]:hover {
+            background-color: olivedrab; 
+        }
+
+    .create-category-form .text-danger {
+        color: hotpink; 
+        margin-top: 5px;
+        font-size: 0.875em;
+    }
+
+@media (max-width: 576px) {
+    .create-category-form {
+        width: 90%;
+    }
+}

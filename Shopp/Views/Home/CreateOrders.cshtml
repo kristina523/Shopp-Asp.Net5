@@ -1,0 +1,19 @@
+﻿@model Shopp.Models.Order
+
+@{
+    ViewBag.Title = "Добавление заказа";
+}
+
+<form asp-action="CreateOrders" asp-controller="Home" method="post">
+    <input type="hidden" asp-for="CustomerId" value="@ViewBag.CustomerId" />
+
+    <div class="form-group">
+        <label asp-for="TotalPrice" class="control-label">Общая стоимость</label>
+        <input type="number" asp-for="TotalPrice" class="form-control" />
+        <span asp-validation-for="TotalPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>

@@ -1,0 +1,41 @@
+﻿.brands-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .brands-table th,
+    .brands-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .brands-table th {
+        background-color: forestgreen;
+        font-weight: bold;
+    }
+
+    .brands-table a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .brands-table a:hover {
+            text-decoration: underline;
+        }
+
+.btn-success {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,56 @@
+﻿body {
+    background-color: deeppink; 
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; 
+}
+
+h2 {
+    color: lightpink; 
+    margin-bottom: 20px;
+}
+
+.customer-details {
+    max-width: 700px; 
+    margin: 30px auto;
+    padding: 30px;
+    background-color: hotpink;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .customer-details dl {
+        margin-bottom: 20px;
+    }
+
+    .customer-details dt {
+        font-weight: bold;
+        color: #555; 
+    }
+
+    .customer-details dd {
+        margin-left: 10px;
+        color: dodgerblue; 
+    }
+
+    .customer-details .actions {
+        text-align: right; 
+        margin-top: 20px;
+    }
+
+    .customer-details a {
+        display: inline-block;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: lightpink;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+        .customer-details a.edit {
+            background-color: purple; 
+        }
+
+            .customer-details a.edit:hover {
+                background-color: peachpuff; 
+    }
+}

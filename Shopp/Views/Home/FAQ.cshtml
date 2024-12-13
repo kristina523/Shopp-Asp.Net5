@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Часто задаваемые вопросы";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Магазин Косметики</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #ff6f61;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+article:hover {
+    background-color: #f1f1f1;
+}
+
+h3 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff6f61;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+
+<body>
+    <header>
+        <h1>Часто задаваемые вопросы</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Вопросы и ответы</h2>
+            <article>
+                <h3>Как оформить заказ?</h3>
+                <p>Для оформления заказа добавьте товары в корзину и следуйте инструкциям на экране.</p>
+            </article>
+            <article>
+                <h3>Какие способы оплаты вы принимаете?</h3>
+                <p>Мы принимаем кредитные карты, PayPal и другие методы оплаты.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин Косметики</p>
+    </footer>
+</body>
+</html>

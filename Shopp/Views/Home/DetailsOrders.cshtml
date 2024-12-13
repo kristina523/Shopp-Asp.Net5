@@ -1,0 +1,33 @@
+﻿@model Shopp.Models.Order
+@{
+    ViewBag.Title = "Заказ #" + Model.OrderId;
+}
+
+<h2>Заказ #@Model.OrderId</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>Идентификатор заказа</dt>
+        <dd>@Model.OrderId</dd>
+
+        <dt>Клиент</dt>
+        <dd>@(Model.Customer?.FirstName + " " + Model.Customer?.LastName ?? "Не указан")</dd>
+
+        <dt>Общая стоимость</dt>
+        <dd>@($"{Model.TotalPrice:C}")</dd>
+
+        <dt>Товары:</dt>
+        <dd>
+            <ul>
+
+                {
+                <li>Товары не найдены.</li>
+                }
+            </ul>
+        </dd>
+    </dl>
+</div>
+
+<p>
+    <a asp-action="EditOrders" asp-route-id="@Model.OrderId">Изменить</a> |
+    <a asp-action="Index">Вернуться к списку</a>
+</p>

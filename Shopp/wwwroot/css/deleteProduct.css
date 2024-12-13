@@ -1,0 +1,49 @@
+﻿body {
+    background-color: #f4f4f4; 
+    font-family: 'Arial', sans-serif; 
+}
+
+h1, h4 {
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.delete-confirmation {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+    .delete-confirmation dl {
+        margin-bottom: 20px;
+    }
+
+    .delete-confirmation dt {
+        font-weight: bold;
+        color: #555; 
+    }
+
+    .delete-confirmation dd {
+        margin-left: 10px;
+        color: #333; 
+    }
+
+    .delete-confirmation .form-group {
+        text-align: center; 
+    }
+
+    .delete-confirmation .btn-default {
+        background-color: #dc3545; 
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .delete-confirmation .btn-default:hover {
+            background-color: #c82333; 
+        }

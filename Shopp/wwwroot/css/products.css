@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #fdd; 
+    font-family: Arial, sans-serif; 
+}
+
+h1 {
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.products-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .products-table th,
+    .products-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .products-table th {
+        background-color: #ffa500; 
+        font-weight: bold;
+    }
+
+    .products-table a {
+        text-decoration: none;
+        color: #007bff; 
+    }
+
+        .products-table a:hover {
+            text-decoration: underline;
+        }
+
+.btn-success {
+    margin-bottom: 10px;
+}

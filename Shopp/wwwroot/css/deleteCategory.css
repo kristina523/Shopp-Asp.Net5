@@ -1,0 +1,71 @@
+﻿body {
+    background-color: pink; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h4 {
+    color: hotpink; 
+    margin-bottom: 15px;
+}
+
+.delete-confirmation {
+    max-width: 500px; 
+    margin: 30px auto;
+    padding: 30px;
+    background-color: orangered;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .delete-confirmation dl {
+        margin-bottom: 20px;
+    }
+
+    .delete-confirmation dt {
+        font-weight: bold;
+        color: lightpink;
+    }
+
+    .delete-confirmation dd {
+        margin-left: 10px;
+        color: #333;
+    }
+
+    .delete-confirmation .form-group {
+        text-align: center;
+    }
+
+    .delete-confirmation .btn-danger { 
+        background-color: #dc3545; 
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-right: 10px; 
+    }
+
+        .delete-confirmation .btn-danger:hover {
+            background-color: #c82333; 
+        }
+
+    .delete-confirmation .btn-secondary { 
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .delete-confirmation .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+@media (max-width: 576px) {
+    .delete-confirmation {
+        width: 90%;
+    }
+}

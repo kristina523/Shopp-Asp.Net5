@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Магазин Косметики</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff6f61;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .button:hover {
+                background-color: #e55a50;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш Магазин Косметики!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Лучшие предложения</h2>
+            <p>Откройте для себя наш ассортимент высококачественной косметики для макияжа, ухода за кожей и многого другого!</p>
+            <a href="#" class="button">Посмотреть предложения</a>
+        </section>
+        <section>
+            <h2>Популярные товары</h2>
+            <p>Не пропустите наши бестселлеры и новинки! Узнайте, что сейчас в тренде.</p>
+            <a href="#" class="button">Узнать больше</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин Косметики</p>
+    </footer>
+</body>
+</html>

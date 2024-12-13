@@ -1,0 +1,36 @@
+﻿@model Shopp.Models.Brand
+
+@{
+    ViewBag.Title = "Удаление бренда";
+}
+
+<link rel="stylesheet" href="~/css/deleteBrand.css" />
+
+<h1>Удаление бренда</h1>
+<hr />
+<div class="delete-confirmation">
+    <p>Вы уверены, что хотите удалить бренд <strong>@Model.Names</strong>?</p>
+    <dl class="dl-horizontal">
+        <dt>Название</dt>
+        <dd>@Html.DisplayFor(model => model.Names)</dd>
+
+        <dt>Страна</dt>
+        <dd>@Html.DisplayFor(model => model.Country)</dd>
+    </dl>
+
+    <div>
+        <form asp-controller="Home" asp-action="DeleteBrands" method="post">
+            <input type="hidden" name="id" asp-for="BrandsId" />
+            <div class="form-group">
+                <input type="submit" class="btn btn-danger" value="Удалить" />
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        @ViewBag.ErrorMessage;
+    }
+</div>
+    
+</div>

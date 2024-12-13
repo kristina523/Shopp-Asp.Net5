@@ -1,0 +1,27 @@
+﻿@model Shopp.Models.Product
+
+@{
+    ViewBag.Title = "Добавление продукта";
+}
+
+<link rel="stylesheet" href="~/css/createProduct.css" />
+
+<div class="create-product-form">
+    <form asp-action="Create" asp-controller="Home" method="post">
+        <div class="form-group">
+            <label asp-for="Names" class="control-label">Название</label>
+            <input type="text" asp-for="Names" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Descriptions" class="control-label">Описание</label>
+            <textarea asp-for="Descriptions" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price" class="control-label">Цена</label>
+            <textarea asp-for="Price" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Отправить" class="btn btn-default" />
+        </div>
+    </form>
+</div>

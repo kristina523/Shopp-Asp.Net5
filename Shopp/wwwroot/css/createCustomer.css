@@ -1,0 +1,64 @@
+﻿body {
+    background-color: pink; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h4 {
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.create-customer-form {
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 30px;
+    background-color: hotpink;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .create-customer-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .create-customer-form input[type="text"],
+    .create-customer-form input[type="email"],
+    .create-customer-form input[type="tel"],
+    .create-customer-form input[type="password"],
+    .create-customer-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .create-customer-form input[type="submit"] {
+        background-color: deeppink; 
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .create-customer-form input[type="submit"]:hover {
+            background-color: #218838; 
+        }
+
+    .create-customer-form .text-danger {
+        color: #dc3545; 
+        margin-top: 5px;
+        font-size: 0.875em;
+    }
+
+@media (max-width: 576px) {
+    .create-customer-form {
+        width: 90%;
+    }
+}

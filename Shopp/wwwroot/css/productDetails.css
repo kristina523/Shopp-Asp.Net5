@@ -1,0 +1,32 @@
+﻿body {
+    background-color: deeppink; 
+    font-family: 'Arial', sans-serif; 
+}
+
+h2 {
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.product-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+    .product-details dl {
+        margin-bottom: 20px;
+    }
+
+    .product-details dt {
+        font-weight: bold;
+        color: #555; 
+    }
+
+    .product-details dd {
+        margin-left: 10px;
+        color: plum; 
+    }

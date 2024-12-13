@@ -1,0 +1,28 @@
+﻿@model Shopp.Models.Category
+
+@{
+    ViewBag.Title = "Добавление категории";
+}
+
+<link rel="stylesheet" href="~/css/createCategory.css" />
+
+<div class="create-category-form">
+    <form asp-action="CreateCategory" asp-controller="Home" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Names" class="control-label">Название</label>
+            <input type="text" asp-for="Names" class="form-control" />
+            <span asp-validation-for="Names" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Отправить" class="btn btn-default" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

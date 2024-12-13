@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Shopp.Models.Order>
+@using System.Linq
+
+@{
+    ViewBag.Title = "Страница заказов";
+}
+
+<link rel="stylesheet" href="~/css/orders.css" />
+
+<h1>Список заказов</h1>
+
+<form asp-action="SearchOrders" method="get" class="search-form">
+    <input type="text" name="searchTerm" placeholder="Поиск заказов..." />
+    <button type="submit">Поиск</button>
+</form>
+
+<table class="table table-striped mt-3 orders-table">
+    <thead>
+        <tr>
+            <th>ID Заказа</th>
+            <th>Клиент</th>
+            <th>Общая стоимость</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Any())
+        {
+            <tr>
+                <td colspan="4" class="text-center">Заказы не найдены.</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@(order.Customer?.FirstName + " " + order.Customer?.LastName ?? "Не указан")</td>
+                    <td>@($"{order.TotalPrice:C}")</td>
+                    <td>
+                        <a asp-action="DetailsOrders" asp-route-id="@order.OrderId">Детали</a> |
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "О нас";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Магазин Косметики</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+            nav a {
+                margin: 0 15px;
+                color: mediumvioletred;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff6f61;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>О нас</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/products">Продукты</a>
+            <a href="/contact">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Наша история</h2>
+            <img src="~/images/about_us.jpg" alt="Наша команда" class="about-image">
+            <p>Мы специализируемся на продаже высококачественной косметики и предлагаем широкий ассортимент товаров для макияжа и ухода за кожей. Наша команда состоит из профессионалов, которые помогут вам выбрать идеальные продукты для вашей красоты.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин Косметики</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    line-height: 1.6;
+}
+
+h2 {
+    color: #333; /* Dark gray heading */
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff; /* White container */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+dl.dl-horizontal {
+    margin-bottom: 20px;
+}
+
+    dl.dl-horizontal dt {
+        font-weight: bold;
+        color: #343a40; /* Dark gray labels */
+        text-align: right; /* Align labels to the right */
+        width: 30%;
+        float: left;
+        padding-right: 10px;
+        margin-top: 5px;
+    }
+
+    dl.dl-horizontal dd {
+        color: #495057; /* Darker gray values */
+        margin-left: 30%; /* Offset for label alignment */
+        padding: 5px 0; /* Added padding for better spacing */
+    }
+
+.actions {
+    text-align: center; /* Center the button */
+    margin-top: 20px;
+}
+
+.btn-default {
+    background-color: #dc3545; /* Red delete button */
+    color: white;
+    border-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-default:hover {
+        background-color: #c82333; /* Darker red on hover */
+    }
+
+
+
+/* Responsive adjustment */
+@media (max-width: 576px) {
+    dl.dl-horizontal dt {
+        width: 40%;
+    }
+
+    dl.dl-horizontal dd {
+        margin-left: 40%;
+    }
+}

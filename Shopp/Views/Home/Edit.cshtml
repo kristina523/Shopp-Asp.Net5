@@ -1,0 +1,39 @@
+﻿@model Shopp.Models.Product
+
+@{
+    ViewData["Title"] = "Изменить продукт";
+}
+
+<link rel="stylesheet" href="~/css/editProduct.css" />
+
+<h1>Изменить продукт</h1>
+<h4>Товар</h4>
+<hr />
+<div class="edit-product-form">
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ProductId" />
+        <div class="form-group">
+            <label asp-for="Names" class="control-label">Название</label>  
+            <input asp-for="Names" class="form-control" />
+            <span asp-validation-for="Names" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Descriptions" class="control-label">Описание</label> 
+            <textarea asp-for="Descriptions" class="form-control"></textarea>
+            <span asp-validation-for="Descriptions" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price" class="control-label">Цена</label>
+            <textarea asp-for="Price" class="form-control"></textarea>
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Сохранить" class="btn btn-primary" /> 
+        </div>
+    </form>
+</div>
+
+<div class="back-to-list">
+    <a asp-action="Index">Назад к списку</a> 
+</div>

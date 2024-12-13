@@ -1,0 +1,56 @@
+﻿body {
+    background-color: #f0f0f0; 
+    font-family: 'Arial', sans-serif; 
+}
+
+h1 {
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.orders-table {
+    width: 90%; 
+    margin: 20px auto; 
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+    .orders-table th,
+    .orders-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .orders-table th {
+        background-color: #f2f2f2; 
+        font-weight: bold;
+    }
+
+    .orders-table a {
+        text-decoration: none;
+        color: #007bff; 
+    }
+
+        .orders-table a:hover {
+            text-decoration: underline;
+        }
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+    .search-form input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .search-form button {
+        padding: 8px 15px;
+        background-color: #007bff; 
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
